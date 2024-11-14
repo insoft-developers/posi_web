@@ -27,5 +27,5 @@ jobs:
             git checkout master
             git pull origin master
             git push origin master
-            composer install --no-dev --optimize-autoloader
+            composer install --no-dev --optimize-autoloader --ignore-platform-req=ext-fileinfo
             php artisan migrate --force
