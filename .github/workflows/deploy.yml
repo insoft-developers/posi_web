@@ -24,7 +24,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/insoft/public_html/posi
-            git checkout -b master
+            git checkout master
             git pull origin master
             git push all master
             composer install --no-dev --optimize-autoloader
