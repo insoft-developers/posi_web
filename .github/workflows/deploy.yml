@@ -21,10 +21,10 @@ jobs:
         if: github.ref == 'refs/heads/master'
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ posi.SSH_HOST }}
-          port: ${{ posi.SSH_PORT }}
-          username: ${{ posi.SSH_USERNAME }}
-          key: ${{ posi.SSH_PRIVATE_KEY }}
+          host: 203.194.114.22
+          port: 22
+          username: root
+          key: NOVEMBER22
           script: |
             cd /home/insoft/public_html/posi
             git checkout master
